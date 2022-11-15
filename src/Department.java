@@ -16,11 +16,12 @@ public class Department {
 
 
 
-    public Department(int id, String name, String numerOfEmployees, String city, String street) {
+    public Department() {
         this.id = id;
         this.name = name;
         this.numerOfEmployees = numerOfEmployees;
-        this.location = new Location(city, street);
+        this.location = new Location(this.location.city, this.location.street);
+
     }
 
     public void show() {
